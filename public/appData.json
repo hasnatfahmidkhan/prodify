@@ -1,0 +1,364 @@
+[
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/todo-list.png",
+    "title": "TaskMaster",
+    "companyName": "EfficientSoft",
+    "id": 1,
+    "description": "TaskMaster helps you organize your daily tasks with ease. It features smart categorization, reminders, and integration with calendar apps. You can break large tasks into subtasks, set deadlines, and track completion progress. The interface is clean and responsive, designed for both desktop and tablet usage. Sync across devices so you don’t lose your work. Ideal for individuals and small teams seeking a simple but powerful task manager.",
+    "size": 24,
+    "reviews": 1200,
+    "ratingAvg": 4.7,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 820 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/calendar.png",
+    "title": "Scheduly",
+    "companyName": "TimeWorks",
+    "id": 2,
+    "description": "Scheduly is a smart calendar and scheduling tool that automates meeting planning and time blocking. It integrates with Google Calendar, Outlook, and iCal to provide unified views. You can set availability rules, allow others to book slots, and get reminders. It also provides insights into your busiest hours and suggests free gaps. The UI is spacious and user-friendly for desktop screens. Great for professionals, assistants, or teams managing time slots.",
+    "size": 30,
+    "reviews": 950,
+    "ratingAvg": 4.5,
+    "downloads": 54000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 505 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/notes.png",
+    "title": "NotePad Pro",
+    "companyName": "WriteFlow",
+    "id": 3,
+    "description": "NotePad Pro is a powerful note-taking app for desktop users who want speed and flexibility. It supports rich text, code blocks, attachments, tagging, and version history. You can organize notes into nested folders or boards, and search instantly across all content. There is dark mode and theme support, making it comfortable for long writing sessions. Works offline and syncs when back online. Perfect for students, developers, and writers.",
+    "size": 40,
+    "reviews": 2200,
+    "ratingAvg": 4.8,
+    "downloads": 112000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1575 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/project.png",
+    "title": "ProjectFlow",
+    "companyName": "FlowTech",
+    "id": 4,
+    "description": "ProjectFlow is designed for teams managing multiple projects. It offers Gantt charts, kanban boards, and task timelines. Team members can assign tasks, comment, attach files, and update status in real time. The dashboard gives you an overview of all projects with progress bars. Desktop layout lets you drag & drop tasks, filter by user, and export reports easily. It's ideal for small agencies, development teams, and project managers.",
+    "size": 55,
+    "reviews": 680,
+    "ratingAvg": 4.3,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 215 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/habit-tracker.png",
+    "title": "HabitTrack",
+    "companyName": "BetterYou",
+    "id": 5,
+    "description": "HabitTrack helps you build and maintain positive habits over time. You can pick habits to follow, schedule daily reminders, and visualize streaks. It shows charts to reflect consistency, missed days, and trends. Desktop interface is optimized for clarity, with color-coded habit cards and calendar view. Syncs across devices, supports habit sharing with friends, and sends friendly nudges. Useful for anyone wanting to develop routines, from fitness to learning.",
+    "size": 12,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 990 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/clock.png",
+    "title": "FocusTimer",
+    "companyName": "FocusLabs",
+    "id": 6,
+    "description": "FocusTimer uses the Pomodoro technique to help you stay productive. Set work and rest intervals, and the app will guide you with notifications. You can label each session, track time spent, and see weekly summaries. The desktop layout displays a large timer, session history, and adjustment controls. It works offline and supports dark mode. Ideal for students, developers, and anyone wanting structured focus bursts.",
+    "size": 10,
+    "reviews": 1800,
+    "ratingAvg": 4.7,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1220 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/brain-storm.png",
+    "title": "MindMapX",
+    "companyName": "BrainWave",
+    "id": 7,
+    "description": "MindMapX helps you visually organize ideas using node-based mind maps. You can drag nodes, link ideas, attach notes or images, and rearrange freely. It supports collaboration, so multiple users can edit the same map in real time. The desktop interface shows infinite canvas, zooming, and pan support. Exports to PDF, image, or shareable link. Great for brainstorming, planning, or knowledge mapping.",
+    "size": 50,
+    "reviews": 420,
+    "ratingAvg": 4.4,
+    "downloads": 22000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 160 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/wallet.png",
+    "title": "BudgetBuddy",
+    "companyName": "MoneyWise",
+    "id": 8,
+    "description": "BudgetBuddy is a personal finance tracker and planner. It helps you log income and expenses, categorize spending, and view monthly trends. You can set financial goals, alerts, and budgets per category. Desktop dashboard displays charts, net balances, and forecasting. Syncs with your bank (read-only) or import CSVs. Useful for students, freelancers, and anyone wanting control over money.",
+    "size": 20,
+    "reviews": 1100,
+    "ratingAvg": 4.5,
+    "downloads": 67000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 595 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/password-manager.png",
+    "title": "SecurePass",
+    "companyName": "LockTech",
+    "id": 9,
+    "description": "SecurePass is a password manager that stores your passwords, notes, and sensitive data securely. It uses strong encryption and supports auto-fill in browsers. You can categorize entries, tag them, and use two-factor authentication for extra safety. Desktop UI provides vault view, search, and import/export. The app also checks for weak or duplicate passwords. Perfect for users wanting a secure yet easy-to-use credentials manager.",
+    "size": 15,
+    "reviews": 600,
+    "ratingAvg": 4.2,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 258 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/000000/clipboard-check.png",
+    "title": "CheckList Pro",
+    "companyName": "ListMakers",
+    "id": 10,
+    "description": "CheckList Pro is a sleek checklist and task-tracking tool. You can create multiple checklists, subitems, and reorder items as needed. It features progress indicators, reminders, and sharing capabilities. The desktop layout is minimal, with quick-add input, filters, and theme support. Syncs across devices so you can check tasks on phone or desktop. Great for daily checklists, packing lists, workflows, or small projects.",
+    "size": 8,
+    "reviews": 950,
+    "ratingAvg": 4.3,
+    "downloads": 48000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  [
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/time-management.png",
+      "title": "TimeCraft",
+      "companyName": "WorklySoft",
+      "id": 11,
+      "description": "TimeCraft is a professional time tracking app designed for freelancers, remote teams, and agencies. It automatically records time spent on tasks and apps, helping you analyze productivity trends. You can generate weekly and monthly reports and export them as CSV or PDF. The desktop dashboard visualizes active vs idle time. The app is lightweight and runs silently in the background while you work. TimeCraft integrates seamlessly with project management platforms like Asana and Trello.",
+      "size": 32,
+      "reviews": 870,
+      "ratingAvg": 4.6,
+      "downloads": 56000,
+      "ratings": [
+        { "name": "1 star", "count": 10 },
+        { "name": "2 star", "count": 22 },
+        { "name": "3 star", "count": 60 },
+        { "name": "4 star", "count": 300 },
+        { "name": "5 star", "count": 478 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/cloud-sync.png",
+      "title": "SyncBox",
+      "companyName": "CloudCore",
+      "id": 12,
+      "description": "SyncBox is a cloud synchronization and backup tool that helps you store and access your files securely. It supports real-time sync between multiple computers and provides offline caching. The app includes version control, so you can restore older file versions easily. It also encrypts files before upload, ensuring privacy. The desktop app supports drag-and-drop uploads and automatic folder synchronization. Perfect for individuals and small teams managing shared workspaces.",
+      "size": 50,
+      "reviews": 1500,
+      "ratingAvg": 4.5,
+      "downloads": 83000,
+      "ratings": [
+        { "name": "1 star", "count": 18 },
+        { "name": "2 star", "count": 20 },
+        { "name": "3 star", "count": 80 },
+        { "name": "4 star", "count": 550 },
+        { "name": "5 star", "count": 832 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/email-open.png",
+      "title": "MailWise",
+      "companyName": "Inboxify",
+      "id": 13,
+      "description": "MailWise is a clean and intelligent email client that helps professionals manage multiple inboxes effortlessly. It groups conversations neatly, filters spam automatically, and allows smart folders for categorizing messages. Users can schedule emails, set follow-up reminders, and use templates for quick replies. The interface is optimized for widescreen monitors, giving a clear view of inbox and message preview. Ideal for people who rely heavily on email for business communication.",
+      "size": 45,
+      "reviews": 970,
+      "ratingAvg": 4.4,
+      "downloads": 64000,
+      "ratings": [
+        { "name": "1 star", "count": 16 },
+        { "name": "2 star", "count": 24 },
+        { "name": "3 star", "count": 90 },
+        { "name": "4 star", "count": 400 },
+        { "name": "5 star", "count": 440 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/analytics.png",
+      "title": "Insightly",
+      "companyName": "DataScope",
+      "id": 14,
+      "description": "Insightly transforms your data into clear visual reports. You can upload CSVs or connect APIs to view analytics dashboards in real time. The app includes drag-and-drop widgets for charts, metrics, and KPIs. It's ideal for tracking performance, team productivity, or sales metrics. The desktop layout offers full-screen data visualization for large displays. Insightly supports exporting visuals for presentations or reports. A must-have tool for data-driven professionals.",
+      "size": 60,
+      "reviews": 1340,
+      "ratingAvg": 4.6,
+      "downloads": 92000,
+      "ratings": [
+        { "name": "1 star", "count": 22 },
+        { "name": "2 star", "count": 30 },
+        { "name": "3 star", "count": 60 },
+        { "name": "4 star", "count": 420 },
+        { "name": "5 star", "count": 808 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/chat.png",
+      "title": "TeamTalk",
+      "companyName": "WorkSync",
+      "id": 15,
+      "description": "TeamTalk is a collaborative messaging and voice app for teams who need real-time communication. It features chat channels, voice calls, file sharing, and screen sharing options. You can integrate it with productivity tools like Google Drive, Trello, and GitHub. Notifications are smartly grouped, avoiding distractions. The desktop client offers smooth performance and keyboard shortcuts for quick navigation. Secure end-to-end encryption ensures private communication.",
+      "size": 75,
+      "reviews": 2700,
+      "ratingAvg": 4.7,
+      "downloads": 120000,
+      "ratings": [
+        { "name": "1 star", "count": 30 },
+        { "name": "2 star", "count": 40 },
+        { "name": "3 star", "count": 100 },
+        { "name": "4 star", "count": 600 },
+        { "name": "5 star", "count": 1930 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/mind-map.png",
+      "title": "ThinkerBoard",
+      "companyName": "CreativeMind",
+      "id": 16,
+      "description": "ThinkerBoard helps creative teams brainstorm visually with shared digital whiteboards. Draw, write, or drop sticky notes in real time. The app supports templates for project planning, retrospectives, and design sprints. Each board auto-saves to the cloud and can be exported as an image or PDF. The desktop version supports infinite zoom and intuitive drag controls. It's perfect for teachers, designers, and startup teams.",
+      "size": 48,
+      "reviews": 820,
+      "ratingAvg": 4.5,
+      "downloads": 41000,
+      "ratings": [
+        { "name": "1 star", "count": 10 },
+        { "name": "2 star", "count": 15 },
+        { "name": "3 star", "count": 70 },
+        { "name": "4 star", "count": 300 },
+        { "name": "5 star", "count": 425 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/bookmark.png",
+      "title": "SaveIt",
+      "companyName": "WebWise",
+      "id": 17,
+      "description": "SaveIt is a bookmarking and link-saving app that helps users organize articles, tutorials, and websites. You can tag, categorize, and add notes to saved links. It includes a reading mode that strips away distractions for focused reading. The desktop layout supports drag-and-drop organization of collections. Syncs automatically across browsers and devices. A great tool for students, researchers, and knowledge workers collecting online resources.",
+      "size": 22,
+      "reviews": 1180,
+      "ratingAvg": 4.6,
+      "downloads": 78000,
+      "ratings": [
+        { "name": "1 star", "count": 14 },
+        { "name": "2 star", "count": 18 },
+        { "name": "3 star", "count": 50 },
+        { "name": "4 star", "count": 350 },
+        { "name": "5 star", "count": 748 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/goal.png",
+      "title": "GoalKeeper",
+      "companyName": "PeakWork",
+      "id": 18,
+      "description": "GoalKeeper helps individuals and teams set, track, and achieve goals effectively. It breaks large objectives into measurable milestones and provides visual progress charts. Users can set deadlines, link related tasks, and monitor overall achievement percentage. The desktop dashboard is simple yet data-rich, offering color-coded goals and automatic reminders. A great companion for personal development or performance tracking.",
+      "size": 25,
+      "reviews": 980,
+      "ratingAvg": 4.4,
+      "downloads": 51000,
+      "ratings": [
+        { "name": "1 star", "count": 20 },
+        { "name": "2 star", "count": 25 },
+        { "name": "3 star", "count": 60 },
+        { "name": "4 star", "count": 400 },
+        { "name": "5 star", "count": 475 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/check-file.png",
+      "title": "DocuSync",
+      "companyName": "FileHub",
+      "id": 19,
+      "description": "DocuSync is a document management and collaboration app built for productivity. It lets you upload, share, and edit documents in real time. Version history ensures no data loss, while comments and highlights make teamwork easier. The desktop app supports drag-and-drop uploads and offline editing. Documents auto-sync when reconnected to the internet. Excellent for remote teams, freelancers, and educational institutions managing shared files.",
+      "size": 58,
+      "reviews": 1500,
+      "ratingAvg": 4.6,
+      "downloads": 89000,
+      "ratings": [
+        { "name": "1 star", "count": 15 },
+        { "name": "2 star", "count": 30 },
+        { "name": "3 star", "count": 80 },
+        { "name": "4 star", "count": 550 },
+        { "name": "5 star", "count": 825 }
+      ]
+    },
+    {
+      "image": "https://img.icons8.com/fluency/96/000000/alarm-clock.png",
+      "title": "RiseUp",
+      "companyName": "MotivApp",
+      "id": 20,
+      "description": "RiseUp is a motivational productivity alarm app that helps you start your day right. It combines alarm, task reminders, and positive quotes. You can create morning routines, track progress, and log achievements. The app includes soothing wake-up tones and habit-linked alarms. The desktop version syncs with mobile reminders and calendar events. Perfect for those who want to begin their day with motivation and structure.",
+      "size": 18,
+      "reviews": 1250,
+      "ratingAvg": 4.5,
+      "downloads": 70000,
+      "ratings": [
+        { "name": "1 star", "count": 10 },
+        { "name": "2 star", "count": 22 },
+        { "name": "3 star", "count": 80 },
+        { "name": "4 star", "count": 400 },
+        { "name": "5 star", "count": 738 }
+      ]
+    }
+  ]
+]
