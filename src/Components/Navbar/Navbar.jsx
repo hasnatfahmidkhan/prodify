@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <Link to="/" className="relative">
             <img
-              className="hidden md:inline-block w-10 object-cover px-2 md:px-0"
+              className="w-10"
               src="/prodify-icon.png"
               alt="Prodify logo"
             />
@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* desktop menu  */}
         <div className="navbar-center hidden lg:flex">
           <ul className="navlinks flex gap-8 font-medium">
-            <li className="text-lg textgra">
+            <li className="text-lg">
               <NavLink to="/" className="flex items-center gap-1 text-gray-600">
                 <span className="text-gray-600">
                   <HiOutlineHome />
@@ -31,7 +31,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li className="text-lg textgra">
+            <li className="text-lg">
               <NavLink
                 to="/apps"
                 className="flex items-center gap-1 text-gray-600"
@@ -42,7 +42,7 @@ const Navbar = () => {
                 Apps
               </NavLink>
             </li>
-            <li className="text-lg textgra">
+            <li className="text-lg">
               <NavLink
                 to="/installation"
                 className="flex items-center gap-1 text-gray-600"
@@ -72,20 +72,44 @@ const Navbar = () => {
           {/* mobile menu  */}
           <div className="dropdown dropdown-end ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <HiMenuAlt3 />
+              <HiMenuAlt3 size={24} />
             </div>
             <ul
               tabIndex={0}
               className="navlinks menu menu-lg  dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text"
             >
-              <li>
-                <NavLink to="/">Home</NavLink>
+              <li className="text-lg">
+                <NavLink
+                  to="/"
+                  className="flex items-center gap-1 text-gray-600"
+                >
+                  <span className="text-gray-600">
+                    <HiOutlineHome />
+                  </span>{" "}
+                  Home
+                </NavLink>
               </li>
-              <li>
-                <NavLink to="/apps">Apps</NavLink>
+              <li className="text-lg">
+                <NavLink
+                  to="/apps"
+                  className="flex items-center gap-1 text-gray-600"
+                >
+                  <span className="text-gray-600">
+                    <FaAppStore />
+                  </span>{" "}
+                  Apps
+                </NavLink>
               </li>
-              <li>
-                <NavLink to="/installation">Installation</NavLink>
+              <li className="text-lg">
+                <NavLink
+                  to="/installation"
+                  className="flex items-center gap-1 text-gray-600"
+                >
+                  <span className="text-gray-600">
+                    <MdOutlineInstallDesktop />
+                  </span>{" "}
+                  Installation
+                </NavLink>
               </li>
             </ul>
           </div>
