@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         {/* desktop menu  */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="navlinks flex gap-8 text-xl">
+          <ul className="navlinks flex gap-8 font-medium">
             <li className="text-lg textgra">
               <NavLink to="/" className="flex items-center gap-1 text-gray-600">
                 <span className="text-gray-600">
