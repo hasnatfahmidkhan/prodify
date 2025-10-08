@@ -19,30 +19,24 @@ const Navbar = () => {
         {/* desktop menu  */}
         <div className="navbar-center hidden lg:flex">
           <ul className="navlinks flex gap-8 font-medium">
-            <li className="text-lg">
-              <NavLink to="/" className="flex items-center gap-1 text-gray-600">
+            <li>
+              <NavLink to="/" className="navlink">
                 <span className="text-gray-600">
                   <HiOutlineHome />
                 </span>{" "}
                 Home
               </NavLink>
             </li>
-            <li className="text-lg">
-              <NavLink
-                to="/apps"
-                className="flex items-center gap-1 text-gray-600"
-              >
+            <li>
+              <NavLink to="/apps" className="navlink">
                 <span className="text-gray-600">
                   <FaAppStore />
                 </span>{" "}
                 Apps
               </NavLink>
             </li>
-            <li className="text-lg">
-              <NavLink
-                to="/installation"
-                className="flex items-center gap-1 text-gray-600"
-              >
+            <li>
+              <NavLink to="/installation" className="navlink">
                 <span className="text-gray-600">
                   <MdOutlineInstallDesktop />
                 </span>{" "}
@@ -74,33 +68,24 @@ const Navbar = () => {
               tabIndex={0}
               className="navlinks menu menu-lg  dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text"
             >
-              <li className="text-lg">
-                <NavLink
-                  to="/"
-                  className="flex items-center gap-1 text-gray-600"
-                >
+              <li>
+                <NavLink to="/" className="navlink">
                   <span className="text-gray-600">
                     <HiOutlineHome />
                   </span>{" "}
                   Home
                 </NavLink>
               </li>
-              <li className="text-lg">
-                <NavLink
-                  to="/apps"
-                  className="flex items-center gap-1 text-gray-600"
-                >
+              <li>
+                <NavLink to="/apps" className="navlink">
                   <span className="text-gray-600">
                     <FaAppStore />
                   </span>{" "}
                   Apps
                 </NavLink>
               </li>
-              <li className="text-lg">
-                <NavLink
-                  to="/installation"
-                  className="flex items-center gap-1 text-gray-600"
-                >
+              <li>
+                <NavLink to="/installation" className="navlink">
                   <span className="text-gray-600">
                     <MdOutlineInstallDesktop />
                   </span>{" "}

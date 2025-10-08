@@ -1,3 +1,11 @@
+@import "tailwindcss";
+.navlinks .navlink {
+  @apply flex items-center gap-1 text-gray-600 px-3 py-1.5 text-lg rounded-md transition;
+}
+
+.navlinks .navlink:hover {
+  @apply bg-gray-300;
+}
 .navlinks a.active {
-  @apply bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#9F62F2];
+  @apply bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#9F62F2] rounded-none;
 }
