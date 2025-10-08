@@ -1,10 +1,25 @@
+import { useEffect, useState } from "react";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewsIcon from "../../assets/icon-review.png";
+import { loadStoredData, saveAppData } from "../../Utility/localStorage";
 import "./appDetailsCard.css";
 const AppDetailsCard = ({ app }) => {
-  const { ratingAvg, downloads, image, title, companyName, reviews, size } =
+  const { ratingAvg, downloads, image, title, companyName, reviews, size, id } =
     app;
+  const [disabled, setDisabled] = useState(false);
+
+  useEffect(() => {
+    const storedIds = loadStoredData();
+    const isInstalled = storedIds.includes(id);
+    setDisabled(isInstalled);
+  }, [id]);
+
+  const handleInstall = () => {
+    saveAppData(id);
+    setDisabled(true);
+  };
+
   return (
     <div className="flex flex-col lg:flex-row gap-8 md:gap-15 xl:gap-30">
       <img
@@ -22,8 +37,13 @@ const AppDetailsCard = ({ app }) => {
           </span>
         </p>
         <div className="divider"></div>
-        <button className="btn px-5 py-6.5 text-lg font-medium bg-[#00D390] text-white skeleton">
-          Install Now ({size}MB)
+        <button
+          onClick={!disabled ? handleInstall : undefined}
+          className={`btn px-5 py-6.5 text-lg font-medium bg-[#00D390] text-white skeleton ${
+            disabled ? "cursor-not-allowed opacity-100" : ""
+          }`}
+        >
+          {!disabled ? `Install Now (${size}MB)` : "Installed"}
         </button>
 
         <div className="grid grid-cols-3 xl:w-2/3">
