@@ -13,7 +13,7 @@ import {
 
 const AppDetails = () => {
   const { state: app } = useLocation();
-  const { ratings } = app;
+  const { ratings } = app || {};
 
   return (
     <div className="bg-base-200 py-8 min-h-[calc(100vh-308px)]">
