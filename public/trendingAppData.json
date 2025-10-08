@@ -1,0 +1,74 @@
+[
+  {
+    "id": 3,
+    "title": "NotePad Pro: Ultimate Note-Taking",
+    "companyName": "WriteFlow",
+    "image": "https://i.postimg.cc/P5Qmkqnm/notepadpro.png",
+    "ratingAvg": 4.8,
+    "downloads": "1.1M",
+    "description": "A powerful note-taking app supporting rich text, attachments, dark mode, and instant search. Perfect for writers, developers, and students."
+  },
+  {
+    "id": 6,
+    "title": "FocusTimer: Pomodoro Productivity",
+    "companyName": "FocusLabs",
+    "image": "https://img.icons8.com/fluency/96/000000/clock.png",
+    "ratingAvg": 4.7,
+    "downloads": "900K",
+    "description": "Pomodoro-based focus timer with session history, offline mode, and productivity tracking for structured work sessions."
+  },
+  {
+    "id": 5,
+    "title": "HabitTrack: Build Better Habits",
+    "companyName": "BetterYou",
+    "image": "https://i.postimg.cc/cC7J8rmv/habittrack.webp",
+    "ratingAvg": 4.6,
+    "downloads": "750K",
+    "description": "A smart habit tracker with visual streaks, analytics, and daily reminders to help you build positive habits effectively."
+  },
+  {
+    "id": 15,
+    "title": "TeamTalk: Secure Team Messaging",
+    "companyName": "WorkSync",
+    "image": "https://img.icons8.com/fluency/96/000000/chat.png",
+    "ratingAvg": 4.7,
+    "downloads": "1.2M",
+    "description": "Real-time messaging and voice app with file sharing, integrations, and end-to-end encryption for modern teams."
+  },
+  {
+    "id": 14,
+    "title": "Insightly: Analytics Dashboard",
+    "companyName": "DataScope",
+    "image": "https://img.icons8.com/fluency/96/000000/analytics.png",
+    "ratingAvg": 4.6,
+    "downloads": "920K",
+    "description": "Transforms your data into interactive analytics dashboards with drag-and-drop widgets and API integrations."
+  },
+  {
+    "id": 19,
+    "title": "DocuSync: Collaborative Documents",
+    "companyName": "FileHub",
+    "image": "https://img.icons8.com/fluency/96/000000/check-file.png",
+    "ratingAvg": 4.6,
+    "downloads": "890K",
+    "description": "A collaborative document management app with real-time editing, version history, and offline sync support."
+  },
+  {
+    "id": 17,
+    "title": "SaveIt: Bookmark & Organize Links",
+    "companyName": "WebWise",
+    "image": "https://img.icons8.com/fluency/96/000000/bookmark.png",
+    "ratingAvg": 4.6,
+    "downloads": "780K",
+    "description": "Bookmark and organize your favorite links with tagging, reading mode, and cross-device sync."
+  },
+  {
+    "id": 20,
+    "title": "RiseUp: Motivational Alarm & Productivity",
+    "companyName": "MotivApp",
+    "image": "https://img.icons8.com/fluency/96/000000/alarm-clock.png",
+    "ratingAvg": 4.5,
+    "downloads": "700K",
+    "description": "Motivational alarm and productivity app combining routines, tasks, and inspiring quotes to start your day strong."
+  }
+]
