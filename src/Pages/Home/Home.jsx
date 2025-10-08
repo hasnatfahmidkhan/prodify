@@ -2,6 +2,7 @@ import useAppData from "../../Hook/useAppData";
 import Banner from "../../Components/Banner/Banner";
 import AppCard from "../../Components/AppCard/AppCard";
 import Container from "../../Components/Container/Container";
+import Button from "../../Components/Button/Button";
 const Home = () => {
   const { apps } = useAppData("/trendingAppData.json");
 
@@ -38,7 +39,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center">
-            <button className="btn ">Show All</button>
+            <Button text="Show All" route={"/apps"} />
           </div>
         </section>
       </Container>
