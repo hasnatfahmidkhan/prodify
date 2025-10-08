@@ -12,7 +12,7 @@ const useAppData = (url) => {
       .then((data) => setApps(data.data))
       .catch((err) => SetError(err))
       .finally(() => SetLoading(false));
-  }, []);
+  }, [url]);
 
   return { apps, loading, error };
 };

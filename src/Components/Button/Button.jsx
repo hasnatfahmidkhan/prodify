@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const Button = ({ text, route }) => {
   const navigate = useNavigate();
