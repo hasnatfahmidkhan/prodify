@@ -10,11 +10,7 @@ const Navbar = () => {
       <div className="navbar md:w-11/12 2xl:w-10/12 mx-auto">
         <div className="navbar-start">
           <Link to="/" className="relative">
-            <img
-              className="w-10"
-              src="/prodify-icon.png"
-              alt="Prodify logo"
-            />
+            <img className="w-10" src="/prodify-icon.png" alt="Prodify logo" />
             <span className="text-xl absolute -bottom-2 left-9 font-semibold bg-gradient-to-br from-[#5d26dd] to-[#925fda] bg-clip-text text-transparent baloobhai-font">
               RODIFY
             </span>
@@ -57,8 +53,8 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex items-center gap-6">
-            <Link
-              to={"https://github.com/hasnatfahmidkhan"}
+            <a
+              href="https://github.com/hasnatfahmidkhan"
               target="_blank"
               className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white font-semibold rounded-md"
             >
@@ -66,7 +62,7 @@ const Navbar = () => {
                 <FaGithub />
               </span>
               Contribute
-            </Link>
+            </a>
           </div>
 
           {/* mobile menu  */}
