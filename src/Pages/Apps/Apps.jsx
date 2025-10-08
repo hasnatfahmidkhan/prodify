@@ -3,6 +3,7 @@ import Container from "../../Components/Container/Container";
 import useAppData from "../../Hook/useAppData";
 import AppCard from "../../Components/AppCard/AppCard";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
+import Button from "../../Components/Button/Button";
 
 const Apps = () => {
   const { apps, loading } = useAppData("/appData.json");
@@ -57,6 +58,11 @@ const Apps = () => {
 
       {loading ? (
         <SkeletonLoader count={20} />
+      ) : searchedApps.length === 0 ? (
+        <div className="flex flex-col justify-center items-center h-80 gap-5">
+          <h2 className="text-4xl md:text-6xl font-bold">App Not Found</h2>
+          <Button text="Show All Apps" onClick={() => setSearch("")} />
+        </div>
       ) : (
         <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
           {searchedApps.map((app) => (

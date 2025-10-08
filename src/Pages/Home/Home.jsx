@@ -4,9 +4,10 @@ import AppCard from "../../Components/AppCard/AppCard";
 import Container from "../../Components/Container/Container";
 import Button from "../../Components/Button/Button";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
+import { useNavigate } from "react-router";
 const Home = () => {
   const { apps, loading } = useAppData("/trendingAppData.json");
-
+  const navigate = useNavigate();
   return (
     <>
       <Banner />
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
           )}
           <div className="text-center">
-            <Button text="Show All" route={"/apps"} />
+            <Button text="Show All" onClick={() => navigate("/apps")} />
           </div>
         </section>
       </Container>
