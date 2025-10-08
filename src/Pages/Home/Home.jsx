@@ -3,8 +3,9 @@ import Banner from "../../Components/Banner/Banner";
 import AppCard from "../../Components/AppCard/AppCard";
 import Container from "../../Components/Container/Container";
 import Button from "../../Components/Button/Button";
+import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 const Home = () => {
-  const { apps } = useAppData("/trendingAppData.json");
+  const { apps, loading } = useAppData("/trendingAppData.json");
 
   return (
     <>
@@ -33,11 +34,15 @@ const Home = () => {
               Explore All Trending Apps on the Market developed by us
             </p>
           </div>
-          <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 py-10">
-            {apps.map((app) => (
-              <AppCard key={app.id} app={app} />
-            ))}
-          </div>
+          {loading ? (
+            <SkeletonLoader />
+          ) : (
+            <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 py-10">
+              {apps.map((app) => (
+                <AppCard key={app.id} app={app} />
+              ))}
+            </div>
+          )}
           <div className="text-center">
             <Button text="Show All" route={"/apps"} />
           </div>

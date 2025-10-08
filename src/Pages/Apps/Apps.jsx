@@ -2,10 +2,12 @@ import { useState } from "react";
 import Container from "../../Components/Container/Container";
 import useAppData from "../../Hook/useAppData";
 import AppCard from "../../Components/AppCard/AppCard";
+import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 
 const Apps = () => {
-  const { apps } = useAppData("/appData.json");
+  const { apps, loading } = useAppData("/appData.json");
   const [search, setSearch] = useState("");
+
   const term = search.trim().toLocaleLowerCase();
   const searchedApps = term
     ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
@@ -20,7 +22,7 @@ const Apps = () => {
         </p>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 py-5">
+      <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-4">
         <p className="text-2xl font-semibold">
           ({searchedApps.length}) Apps Found
         </p>
@@ -53,11 +55,15 @@ const Apps = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 ">
-        {searchedApps.map((app) => (
-          <AppCard key={app.id} app={app} />
-        ))}
-      </div>
+      {loading ? (
+        <SkeletonLoader count={20} />
+      ) : (
+        <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
+          {searchedApps.map((app) => (
+            <AppCard key={app.id} app={app} />
+          ))}
+        </div>
+      )}
     </Container>
   );
 };
