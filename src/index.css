@@ -6,7 +6,11 @@
 * {
   font-family: "Inter", sans-serif;
 }
-
+html,
+body {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
 .baloobhai-font {
   font-family: "Baloo Bhai 2", sans-serif;
 }

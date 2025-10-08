@@ -6,7 +6,7 @@ import Button from "../../Components/Button/Button";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 import { useNavigate } from "react-router";
 const Home = () => {
-  const { apps, loading } = useAppData("/trendingAppData.json");
+  const { apps, loading } = useAppData("../trendingAppData.json");
   const navigate = useNavigate();
   return (
     <>

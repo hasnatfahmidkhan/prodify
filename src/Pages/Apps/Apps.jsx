@@ -7,7 +7,7 @@ import Button from "../../Components/Button/Button";
 import { ScaleLoader } from "react-spinners";
 
 const Apps = () => {
-  const { apps, loading } = useAppData("/appData.json");
+  const { apps, loading } = useAppData("../appData.json");
   const [search, setSearch] = useState("");
   const [searchLoading, setSearchLoading] = useState(false);
 
