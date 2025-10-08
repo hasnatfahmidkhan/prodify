@@ -4,10 +4,22 @@ import useAppData from "../../Hook/useAppData";
 import AppCard from "../../Components/AppCard/AppCard";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 import Button from "../../Components/Button/Button";
+import { ScaleLoader } from "react-spinners";
 
 const Apps = () => {
   const { apps, loading } = useAppData("/appData.json");
   const [search, setSearch] = useState("");
+  const [searchLoading, setSearchLoading] = useState(false);
+
+  const handleSearch = (e) => {
+    setSearchLoading(true);
+    setSearch(e.target.value);
+
+    // delay to search and show the loader
+    setTimeout(() => {
+      setSearchLoading(false);
+    }, 500);
+  };
 
   const term = search.trim().toLocaleLowerCase();
   const searchedApps = term
@@ -47,7 +59,7 @@ const Apps = () => {
             </svg>
             <input
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => handleSearch(e)}
               type="search"
               required
               placeholder="Search Apps"
@@ -56,7 +68,11 @@ const Apps = () => {
         </div>
       </div>
 
-      {loading ? (
+      {searchLoading ? (
+        <div className="flex items-center justify-center min-h-[calc(100vh-608px)]">
+          <ScaleLoader color="#9F62F2" />
+        </div>
+      ) : loading ? (
         <SkeletonLoader count={20} />
       ) : searchedApps.length === 0 ? (
         <div className="flex flex-col justify-center items-center h-80 gap-5">
