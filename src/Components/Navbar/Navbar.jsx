@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <Link to="/" className="relative">
             <img className="w-14" src="/prodify-icon.png" alt="Prodify logo" />
-            <span className="text-xl absolute -bottom-2 left-6 font-semibold bg-gradient-to-br from-[#5d26dd] to-[#925fda] bg-clip-text text-transparent baloobhai-font">
+            <span className="text-xl absolute -bottom-2 left-6 font-semibold bg-gradient-to-tr from-[#4D1FDE] to-[#9C10D5] bg-clip-text text-transparent baloobhai-font">
               RODIFY
             </span>
           </Link>

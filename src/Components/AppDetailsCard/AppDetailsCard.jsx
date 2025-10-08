@@ -6,7 +6,7 @@ const AppDetailsCard = ({ app }) => {
   const { ratingAvg, downloads, image, title, companyName, reviews, size } =
     app;
   return (
-    <div className="px-4 md:px-20 flex flex-col lg:flex-row gap-8 md:gap-15 xl:gap-30">
+    <div className="flex flex-col lg:flex-row gap-8 md:gap-15 xl:gap-30">
       <img
         src={image}
         className="w-sm rounded-lg shadow-md md:shadow-2xl border border-gray-100"
