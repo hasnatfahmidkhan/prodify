@@ -1,5 +1,4 @@
 const SkeletonLoader = ({ count = 8 }) => {
-  console.log(count);
   return (
     <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
       {Array.from({ length: count }).map((_, i) => (

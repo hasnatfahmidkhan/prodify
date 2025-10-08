@@ -1,10 +1,14 @@
+import { useNavigate } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 const AppCard = ({ app }) => {
-
-    const { ratingAvg, downloads, image, title } = app;
+  const navigate = useNavigate();
+  const { ratingAvg, downloads, image, title, id } = app;
   return (
-    <div className="cursor-pointer hover:-translate-y-3 transition duration-300 p-5 bg-base-100 shadow-md border border-gray-100 rounded-xl">
+    <div
+      onClick={() => navigate(`/apps/${id}`, { state: app })}
+      className="cursor-pointer hover:-translate-y-3 transition duration-300 p-5 bg-base-100 shadow-md border border-gray-100 rounded-xl"
+    >
       <figure className="w-64 mx-auto">
         <img
           className="w-full object-center object-cover rounded-xl"
