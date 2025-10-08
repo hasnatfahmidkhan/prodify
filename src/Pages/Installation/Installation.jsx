@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import { MdArrowDropDown } from "react-icons/md";
-import { loadStoredData } from "../../Utility/localStorage";
+import { loadStoredData, removeAppData } from "../../Utility/localStorage";
 import useAppData from "../../Hook/useAppData";
 import downloadIcon from "../../assets/icon-downloads.png";
-import reviewIcon from "../../assets/icon-review.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 const Installation = () => {
   const { apps } = useAppData("../appData.json");
@@ -24,6 +23,13 @@ const Installation = () => {
   if (sortApp == "size-dsc") {
     installedApps.sort((a, b) => b.size - a.size);
   }
+
+  const handleUninstall = (id) => {
+    removeAppData(id);
+
+    // ui update
+    setInstalledApps((prev) => prev.filter((app) => app.id !== id));
+  };
   return (
     <Container>
       <div className="text-center max-w-2xl w-full mx-auto space-y-3 my-8">
@@ -86,7 +92,10 @@ const Installation = () => {
                 </div>
               </div>
 
-              <button className="btn bg-[#00D390] text-white rounded-md">
+              <button
+                onClick={() => handleUninstall(app.id)}
+                className="btn bg-[#00D390] text-white rounded-md"
+              >
                 Uninstall
               </button>
             </div>
