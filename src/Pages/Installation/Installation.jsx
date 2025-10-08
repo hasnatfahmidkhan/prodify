@@ -19,11 +19,19 @@ const Installation = () => {
     setInstalledApps(filtered);
   }, [apps]);
 
-  if (sortApp == "size-asc") {
-    installedApps.sort((a, b) => a.size - b.size);
+  if (sortApp == "downloads-asc") {
+    installedApps.sort(
+      (a, b) =>
+        Number(a.downloads.replace(/[a-zA-Z]/g, "")) -
+        Number(b.downloads.replace(/[a-zA-Z]/g, ""))
+    );
   }
-  if (sortApp == "size-dsc") {
-    installedApps.sort((a, b) => b.size - a.size);
+  if (sortApp == "downloads-dsc") {
+    installedApps.sort(
+      (a, b) =>
+        Number(b.downloads.replace(/[a-zA-Z]/g, "")) -
+        Number(a.downloads.replace(/[a-zA-Z]/g, ""))
+    );
   }
 
   const handleUninstall = (id) => {
@@ -52,17 +60,17 @@ const Installation = () => {
         <p className="text-2xl font-semibold">
           {installedApps.length} Apps Found
         </p>
-        <div className="relative w-36">
+        <div className="relative w-48">
           <select
             value={sortApp}
             onChange={(e) => setSortApp(e.target.value)}
             className="w-full px-3.5 py-2.5 rounded-md appearance-none bg-base-300 border-none active:border-none"
           >
             <option value="none" disabled>
-              Sort by size
+              Sort by downloads
             </option>
-            <option value="size-asc">Low - High</option>
-            <option value="size-dsc">High - Low</option>
+            <option value="downloads-asc">Low - High</option>
+            <option value="downloads-dsc">High - Low</option>
           </select>
           <MdArrowDropDown size={25} className="absolute top-[25%] right-2" />
         </div>
