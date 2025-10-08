@@ -4,6 +4,8 @@ import ratingIcon from "../../assets/icon-ratings.png";
 import reviewsIcon from "../../assets/icon-review.png";
 import { loadStoredData, saveAppData } from "../../Utility/localStorage";
 import "./appDetailsCard.css";
+import swal from "sweetalert";
+
 const AppDetailsCard = ({ app }) => {
   const { ratingAvg, downloads, image, title, companyName, reviews, size, id } =
     app;
@@ -18,6 +20,7 @@ const AppDetailsCard = ({ app }) => {
   const handleInstall = () => {
     saveAppData(id);
     setDisabled(true);
+    swal("Install Succesfully!", title, "success");
   };
 
   return (

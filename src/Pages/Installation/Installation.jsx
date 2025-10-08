@@ -5,6 +5,8 @@ import { loadStoredData, removeAppData } from "../../Utility/localStorage";
 import useAppData from "../../Hook/useAppData";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
+import swal from "sweetalert";
+
 const Installation = () => {
   const { apps } = useAppData("../appData.json");
   const [sortApp, setSortApp] = useState("none");
@@ -12,7 +14,7 @@ const Installation = () => {
 
   useEffect(() => {
     const storedIds = loadStoredData();
-    console.log(apps);
+
     const filtered = apps.filter((app) => storedIds.includes(app.id));
     setInstalledApps(filtered);
   }, [apps]);
@@ -25,10 +27,17 @@ const Installation = () => {
   }
 
   const handleUninstall = (id) => {
-    removeAppData(id);
+    swal("Are you sure to uninstall it?", {
+      buttons: ["no", "yes!"],
+    }).then((willDelete) => {
+      if (willDelete) {
+        removeAppData(id);
 
-    // ui update
-    setInstalledApps((prev) => prev.filter((app) => app.id !== id));
+        // ui update
+        setInstalledApps((prev) => prev.filter((app) => app.id !== id));
+        swal("Unistall Succesfully!", "", "success");
+      }
+    });
   };
   return (
     <Container>
