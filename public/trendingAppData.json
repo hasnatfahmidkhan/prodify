@@ -1,146 +1,146 @@
 [
   {
-    "image": "https://img.icons8.com/fluency/96/000000/email-open.png",
-    "title": "MailWise: Smart Email Client",
-    "companyName": "Inboxify",
-    "id": 13,
-    "description": "MailWise is a clean and intelligent email client that helps professionals manage multiple inboxes effortlessly. It groups conversations neatly, filters spam automatically, and allows smart folders for categorizing messages. Users can schedule emails, set follow-up reminders, and use templates for quick replies. The interface is optimized for widescreen monitors, giving a clear view of inbox and message preview. Ideal for people who rely heavily on email for business communication.",
-    "size": 45,
-    "reviews": 970,
-    "ratingAvg": 4.4,
-    "downloads": "64K",
+    "image": "https://i.postimg.cc/8c1GqcTh/drive.png",
+    "title": "Google Drive",
+    "companyName": "Google",
+    "id": 9,
+    "description": "Google Drive is a cloud storage service that allows users to store files online, synchronize files across devices, and share files with others.",
+    "size": 300,
+    "reviews": "2M",
+    "ratingAvg": 4.8,
+    "downloads": "1B",
     "ratings": [
-      { "name": "1 star", "count": 16 },
-      { "name": "2 star", "count": 24 },
-      { "name": "3 star", "count": 90 },
-      { "name": "4 star", "count": 400 },
-      { "name": "5 star", "count": 440 }
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1120000 }
     ]
   },
   {
-    "image": "https://img.icons8.com/fluency/96/000000/analytics.png",
-    "title": "Insightly: Data Analytics Dashboard",
-    "companyName": "DataScope",
-    "id": 14,
-    "description": "Insightly transforms your data into clear visual reports. You can upload CSVs or connect APIs to view analytics dashboards in real time. The app includes drag-and-drop widgets for charts, metrics, and KPIs. It's ideal for tracking performance, team productivity, or sales metrics. The desktop layout offers full-screen data visualization for large displays. Insightly supports exporting visuals for presentations or reports. A must-have tool for data-driven professionals.",
-    "size": 60,
-    "reviews": 1340,
-    "ratingAvg": 4.6,
-    "downloads": "92K",
-    "ratings": [
-      { "name": "1 star", "count": 22 },
-      { "name": "2 star", "count": 30 },
-      { "name": "3 star", "count": 60 },
-      { "name": "4 star", "count": 420 },
-      { "name": "5 star", "count": 808 }
-    ]
-  },
-  {
-    "image": "https://img.icons8.com/fluency/96/000000/chat.png",
-    "title": "TeamTalk: Secure Team Messaging",
-    "companyName": "WorkSync",
-    "id": 15,
-    "description": "TeamTalk is a collaborative messaging and voice app for teams who need real-time communication. It features chat channels, voice calls, file sharing, and screen sharing options. You can integrate it with productivity tools like Google Drive, Trello, and GitHub. Notifications are smartly grouped, avoiding distractions. The desktop client offers smooth performance and keyboard shortcuts for quick navigation. Secure end-to-end encryption ensures private communication.",
-    "size": 75,
-    "reviews": 2700,
+    "image": "https://i.postimg.cc/8CdHXzcV/Todoist.png",
+    "title": "Todoist",
+    "companyName": "Doist",
+    "id": 1,
+    "description": "Todoist is a powerful task manager that helps you organize tasks, set priorities, and collaborate with others. It integrates with various platforms and offers features like labels, filters, and productivity reports.",
+    "size": 150,
+    "reviews": "1.2M",
     "ratingAvg": 4.7,
-    "downloads": "120K",
+    "downloads": "50M",
     "ratings": [
-      { "name": "1 star", "count": 30 },
-      { "name": "2 star", "count": 40 },
-      { "name": "3 star", "count": 100 },
-      { "name": "4 star", "count": 600 },
-      { "name": "5 star", "count": 1930 }
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 800000 }
     ]
   },
   {
-    "image": "https://img.icons8.com/fluency/96/000000/mind-map.png",
-    "title": "ThinkerBoard: Collaborative Whiteboard",
-    "companyName": "CreativeMind",
-    "id": 16,
-    "description": "ThinkerBoard helps creative teams brainstorm visually with shared digital whiteboards. Draw, write, or drop sticky notes in real time. The app supports templates for project planning, retrospectives, and design sprints. Each board auto-saves to the cloud and can be exported as an image or PDF. The desktop version supports infinite zoom and intuitive drag controls. It's perfect for teachers, designers, and startup teams.",
-    "size": 48,
-    "reviews": 820,
-    "ratingAvg": 4.5,
-    "downloads": "41K",
+    "image": "https://i.postimg.cc/g2QQbjGq/notion.webp",
+    "title": "Notion",
+    "companyName": "Notion Labs Inc.",
+    "id": 2,
+    "description": "Notion is an all-in-one workspace where you can write, plan, collaborate, and organize. It allows for notes, databases, task management, and wikis, all in one platform.",
+    "size": 200,
+    "reviews": "900K",
+    "ratingAvg": 4.8,
+    "downloads": "30M",
     "ratings": [
-      { "name": "1 star", "count": 10 },
-      { "name": "2 star", "count": 15 },
-      { "name": "3 star", "count": 70 },
-      { "name": "4 star", "count": 300 },
-      { "name": "5 star", "count": 425 }
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 730000 }
     ]
   },
   {
-    "image": "https://img.icons8.com/fluency/96/000000/bookmark.png",
-    "title": "SaveIt: Bookmark & Organize Links",
-    "companyName": "WebWise",
-    "id": 17,
-    "description": "SaveIt is a bookmarking and link-saving app that helps users organize articles, tutorials, and websites. You can tag, categorize, and add notes to saved links. It includes a reading mode that strips away distractions for focused reading. The desktop layout supports drag-and-drop organization of collections. Syncs automatically across browsers and devices. A great tool for students, researchers, and knowledge workers collecting online resources.",
-    "size": 22,
-    "reviews": 1180,
+    "image": "https://i.postimg.cc/qR3CDmjw/googlecalendar.png",
+    "title": "Google Calendar",
+    "companyName": "Google",
+    "id": 3,
+    "description": "Google Calendar is a time-management and scheduling calendar service developed by Google. It allows users to create and edit events, and share them with others.",
+    "size": 100,
+    "reviews": "2.5M",
     "ratingAvg": 4.6,
-    "downloads": "78K",
+    "downloads": "1B",
     "ratings": [
-      { "name": "1 star", "count": 14 },
-      { "name": "2 star", "count": 18 },
-      { "name": "3 star", "count": 50 },
-      { "name": "4 star", "count": 350 },
-      { "name": "5 star", "count": 748 }
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1950000 }
     ]
   },
   {
-    "image": "https://img.icons8.com/fluency/96/000000/goal.png",
-    "title": "GoalKeeper: Set & Track Goals",
-    "companyName": "PeakWork",
-    "id": 18,
-    "description": "GoalKeeper helps individuals and teams set, track, and achieve goals effectively. It breaks large objectives into measurable milestones and provides visual progress charts. Users can set deadlines, link related tasks, and monitor overall achievement percentage. The desktop dashboard is simple yet data-rich, offering color-coded goals and automatic reminders. A great companion for personal development or performance tracking.",
-    "size": 25,
-    "reviews": 980,
-    "ratingAvg": 4.4,
-    "downloads": "51K",
-    "ratings": [
-      { "name": "1 star", "count": 20 },
-      { "name": "2 star", "count": 25 },
-      { "name": "3 star", "count": 60 },
-      { "name": "4 star", "count": 400 },
-      { "name": "5 star", "count": 475 }
-    ]
-  },
-  {
-    "image": "https://img.icons8.com/fluency/96/000000/check-file.png",
-    "title": "DocuSync: Collaborative Documents",
-    "companyName": "FileHub",
-    "id": 19,
-    "description": "DocuSync is a document management and collaboration app built for productivity. It lets you upload, share, and edit documents in real time. Version history ensures no data loss, while comments and highlights make teamwork easier. The desktop app supports drag-and-drop uploads and offline editing. Documents auto-sync when reconnected to the internet. Excellent for remote teams, freelancers, and educational institutions managing shared files.",
-    "size": 58,
-    "reviews": 1500,
-    "ratingAvg": 4.6,
-    "downloads": "89K",
-    "ratings": [
-      { "name": "1 star", "count": 15 },
-      { "name": "2 star", "count": 30 },
-      { "name": "3 star", "count": 80 },
-      { "name": "4 star", "count": 550 },
-      { "name": "5 star", "count": 825 }
-    ]
-  },
-  {
-    "image": "https://img.icons8.com/fluency/96/000000/alarm-clock.png",
-    "title": "RiseUp: Motivational Alarm & Productivity",
-    "companyName": "MotivApp",
-    "id": 20,
-    "description": "RiseUp is a motivational productivity alarm app that helps you start your day right. It combines alarm, task reminders, and positive quotes. You can create morning routines, track progress, and log achievements. The app includes soothing wake-up tones and habit-linked alarms. The desktop version syncs with mobile reminders and calendar events. Perfect for those who want to begin their day with motivation and structure.",
-    "size": 18,
-    "reviews": 1250,
+    "image": "https://i.postimg.cc/3rZwr541/Slack.png",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 4,
+    "description": "Slack is a collaboration hub that connects your work with the people you work with through channels, making it easy to communicate and share files.",
+    "size": 250,
+    "reviews": "1M",
     "ratingAvg": 4.5,
-    "downloads": "70K",
+    "downloads": "100M",
     "ratings": [
-      { "name": "1 star", "count": 10 },
-      { "name": "2 star", "count": 22 },
-      { "name": "3 star", "count": 80 },
-      { "name": "4 star", "count": 400 },
-      { "name": "5 star", "count": 738 }
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 75000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 425000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/V6gcwwGd/googlekeep.png",
+    "title": "Google Keep",
+    "companyName": "Google",
+    "id": 5,
+    "description": "Google Keep is a note-taking service where users can create, edit, and share notes and lists, and set time-based or location-based reminders.",
+    "size": 80,
+    "reviews": "1.5M",
+    "ratingAvg": 4.7,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1060000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/9MRN8h3V/Trellopng.png",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "id": 6,
+    "description": "Trello is a collaboration tool that organizes your projects into boards. It is highly visual and flexible, allowing for task management and team collaboration.",
+    "size": 150,
+    "reviews": "1.3M",
+    "ratingAvg": 4.6,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 860000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/fWgbp4Vd/onenote.png",
+    "title": "Microsoft OneNote",
+    "companyName": "Microsoft",
+    "id": 8,
+    "description": "Microsoft OneNote is a note-taking application that allows users to create, organize, and share notes across devices, with features like handwriting support and multimedia embedding.",
+    "size": 200,
+    "reviews": "1M",
+    "ratingAvg": 4.6,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 35000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 900000 }
     ]
   }
 ]
