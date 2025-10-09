@@ -6,8 +6,8 @@ const AppCard = ({ app }) => {
   const { ratingAvg, downloads, image, title, id } = app;
   return (
     <Link to={`/apps/${id}`}>
-      <div className="cursor-pointer hover:-translate-y-3 transition duration-300 p-5 bg-base-100 shadow-md border border-gray-100 rounded-xl h-full">
-        <figure className="w-64 mx-auto">
+      <div className="cursor-pointer hover:-translate-y-3 transition duration-300 p-5 bg-base-100 shadow-md border border-gray-100 rounded-xl h-full flex flex-col justify-between">
+        <figure>
           <img
             className="w-full object-center object-cover rounded-xl"
             src={image}
