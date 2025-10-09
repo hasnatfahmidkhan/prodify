@@ -64,7 +64,6 @@ const Installation = () => {
           </p>
           <div className="">
             <select
-              defaultValue="Sort by downloads"
               value={sortApp}
               onChange={(e) => setSortApp(e.target.value)}
               className="select bg-white"

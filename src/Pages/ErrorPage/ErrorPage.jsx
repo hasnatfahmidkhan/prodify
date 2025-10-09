@@ -1,10 +1,10 @@
 import errorImg from "../../assets/error-404.png";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router";
 const ErrorPage = () => {
   const navigate = useNavigate();
-  
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -13,7 +13,9 @@ const ErrorPage = () => {
           <img className="" src={errorImg} alt="404 Page not found" />
         </div>
         <div className="mt-8 mb-4 space-y-3">
-          <h2 className="text-3xl md:text-5xl font-bold">Opps page not found!</h2>
+          <h2 className="text-3xl md:text-5xl font-bold">
+            Opps page not found!
+          </h2>
           <p className="text-[#627382]">
             The page you are looking for is not available
           </p>

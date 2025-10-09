@@ -5,6 +5,7 @@ import AppCard from "../../Components/AppCard/AppCard";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 import Button from "../../Components/Button/Button";
 import { ScaleLoader } from "react-spinners";
+import Loader from "../../Components/Loader/Loader";
 
 const Apps = () => {
   const { apps, loading } = useAppData("../appData.json");
@@ -69,9 +70,7 @@ const Apps = () => {
       </div>
 
       {searchLoading ? (
-        <div className="flex items-center justify-center min-h-[calc(100vh-608px)]">
-          <ScaleLoader color="#9F62F2" />
-        </div>
+          <Loader />
       ) : loading ? (
         <SkeletonLoader count={20} />
       ) : searchedApps.length === 0 ? (

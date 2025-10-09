@@ -1,5 +1,5 @@
 import appErrorImg from "../../assets/App-Error.png";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router";
 
