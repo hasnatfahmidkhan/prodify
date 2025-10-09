@@ -7,11 +7,10 @@ import { motion } from "motion/react";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(false);
-  const [preLoad, setPreLoad] = useState(false);
+  const [preLoad, setPreLoad] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
-    setPreLoad(true);
     setTimeout(() => {
       setPreLoad(false);
     }, 2600);
