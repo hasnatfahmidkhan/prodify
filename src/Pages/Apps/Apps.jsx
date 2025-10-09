@@ -4,7 +4,6 @@ import useAppData from "../../Hook/useAppData";
 import AppCard from "../../Components/AppCard/AppCard";
 import SkeletonLoader from "../../Components/SkeletonLoader/SkeletonLoader";
 import Button from "../../Components/Button/Button";
-import { ScaleLoader } from "react-spinners";
 import Loader from "../../Components/Loader/Loader";
 
 const Apps = () => {

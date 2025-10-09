@@ -35,7 +35,16 @@ const AppDetails = () => {
         <div className="divider"></div>
         <div className="py-3 space-y-2">
           <h2 className="text-2xl font-semibold">Description</h2>
-          <p className="text-gray-600">{description}</p>
+          {description
+            .split("\n")
+            .slice(0, 3)
+            .map((part, index) => (
+              <p className="text-gray-600 leading-relaxed" key={index}>
+                {part.trim()}
+                <br />
+                <br />
+              </p>
+            ))}
         </div>
       </Container>
     </div>
