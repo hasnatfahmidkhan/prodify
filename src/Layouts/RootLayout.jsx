@@ -20,10 +20,15 @@ const RootLayout = () => {
   // every navigation show loader at the outlet
   useEffect(() => {
     setLoading(true);
+
+    // scroll to top whenever route change
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     setTimeout(() => {
       setLoading(false);
     }, 500);
   }, [location.pathname]);
+
   if (preLoad) {
     return <PreLoader />;
   }
