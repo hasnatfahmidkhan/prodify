@@ -84,12 +84,12 @@ const Installation = () => {
                 <img
                   src={app.image}
                   alt={app.title}
-                  className="w-14 object-cover rounded-xl"
+                  className="w-24 md:w-14 object-cover rounded-xl"
                 />
 
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium">{app.title}</h3>
-                  <div className="mt-1 flex items-center gap-3">
+                  <h3 className="text-lg font-medium text-center md:text-left">{app.title}</h3>
+                  <div className="mt-1 flex items-center gap-5">
                     <span className="flex items-center gap-1 text-[#00D390]">
                       <img className="w-4" src={downloadIcon} alt="download" />
                       {app.downloads}
