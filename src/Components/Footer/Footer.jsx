@@ -1,42 +1,38 @@
 import React from "react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Footer = () => {
+  const currentDate = new Date().getFullYear();
   return (
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-      <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-5 gap-8">
+      <nav className="grid grid-flow-col gap-5">
+        <Link to={"/"} className="link link-hover">
+          Home
+        </Link>
+        <Link to={"/apps"} className="link link-hover">
+          Apps
+        </Link>
+        <Link to={"/installation"} className="link link-hover">
+          Installation
+        </Link>
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <div className="grid grid-flow-col gap-4">
+          <a href="https://github.com/hasnatfahmidkhan" target="_blank">
+            <FaGithub size={30} />
+          </a>
+          <a href="https://www.linkedin.com/in/hasnatfahmid/" target="_blank">
+            <FaLinkedin size={30} />
+          </a>
+          <a href="https://www.facebook.com/hasnatfahmidkhan" target="_blank">
+            <FaFacebook size={30} />
+          </a>
+        </div>
       </nav>
-      <nav>
-        <h6 className="footer-title">Legal</h6>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
-      </nav>
-      <form>
-        <h6 className="footer-title">Newsletter</h6>
-        <fieldset className="w-80">
-          <label>Enter your email address</label>
-          <div className="join">
-            <input
-              type="text"
-              placeholder="username@site.com"
-              className="input input-bordered join-item"
-            />
-            <button className="btn btn-primary join-item">Subscribe</button>
-          </div>
-        </fieldset>
-      </form>
+      <aside>
+        <p>Copyright © {currentDate} - All right reserved by Prodify.</p>
+      </aside>
     </footer>
   );
 };

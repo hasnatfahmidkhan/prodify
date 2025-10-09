@@ -47,7 +47,7 @@ const Installation = () => {
     });
   };
   return (
-    <div className="bg-[#f5f5f5] min-h-[calc(100vh-308px)]">
+    <div className="bg-base-200 min-h-[calc(100vh-262px)]">
       <Container>
         <div className="text-center max-w-2xl w-full mx-auto space-y-3 my-8">
           <h1 className="text-4xl md:text-5xl font-bold">
@@ -66,7 +66,7 @@ const Installation = () => {
             <select
               value={sortApp}
               onChange={(e) => setSortApp(e.target.value)}
-              className="select bg-white"
+              className="select bg-white w-fit"
             >
               <option value="none" disabled>
                 Sort by downloads
