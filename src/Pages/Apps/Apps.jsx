@@ -70,7 +70,7 @@ const Apps = () => {
       </div>
 
       {searchLoading ? (
-          <Loader />
+        <Loader style={"min-h-[calc(100vh-608px)]"} />
       ) : loading ? (
         <SkeletonLoader count={20} />
       ) : searchedApps.length === 0 ? (
