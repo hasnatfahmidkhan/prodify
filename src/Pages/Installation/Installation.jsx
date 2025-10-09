@@ -18,19 +18,11 @@ const Installation = () => {
     setInstalledApps(filtered);
   }, [apps]);
 
-  if (sortApp == "downloads-asc") {
-    installedApps.sort(
-      (a, b) =>
-        Number(a.downloads.replace(/[a-zA-Z]/g, "")) -
-        Number(b.downloads.replace(/[a-zA-Z]/g, ""))
-    );
+  if (sortApp == "size-asc") {
+    installedApps.sort((a, b) => a.size - b.size);
   }
-  if (sortApp == "downloads-dsc") {
-    installedApps.sort(
-      (a, b) =>
-        Number(b.downloads.replace(/[a-zA-Z]/g, "")) -
-        Number(a.downloads.replace(/[a-zA-Z]/g, ""))
-    );
+  if (sortApp == "size-dsc") {
+    installedApps.sort((a, b) => b.size - a.size);
   }
 
   const handleUninstall = (id) => {
@@ -69,10 +61,10 @@ const Installation = () => {
               className="select bg-white w-fit"
             >
               <option value="none" disabled>
-                Sort by downloads
+                Sort by size
               </option>
-              <option value="downloads-asc">Low - High</option>
-              <option value="downloads-dsc">High - Low</option>
+              <option value="size-asc">Low - High</option>
+              <option value="size-dsc">High - Low</option>
             </select>
           </div>
         </div>
