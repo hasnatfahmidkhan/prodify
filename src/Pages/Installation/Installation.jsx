@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
-import { loadStoredData, removeAppData } from "../../Utility/localStorage";
+import { loadStoredData } from "../../Utility/localStorage";
 import useAppData from "../../Hook/useAppData";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
-import swal from "sweetalert";
+import {
+  convertDownloadsToNumber,
+  handleUninstall,
+} from "../../Utility/utility";
 
 const Installation = () => {
   const { apps } = useAppData("../appData.json");
@@ -17,18 +20,6 @@ const Installation = () => {
     const filtered = apps.filter((app) => storedIds.includes(app.id));
     setInstalledApps(filtered);
   }, [apps]);
-
-  const convertDownloadsToNumber = (value) => {
-    if (value.includes("K")) {
-      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000;
-    }
-    if (value.includes("M")) {
-      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000000;
-    }
-    if (value.includes("B")) {
-      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000000000;
-    }
-  };
 
   if (sortApp == "downloads-asc") {
     installedApps.sort(
@@ -46,19 +37,6 @@ const Installation = () => {
     );
   }
 
-  const handleUninstall = (id) => {
-    swal("Are you sure to uninstall it?", {
-      buttons: ["no", "yes!"],
-    }).then((willDelete) => {
-      if (willDelete) {
-        removeAppData(id);
-
-        // ui update
-        setInstalledApps((prev) => prev.filter((app) => app.id !== id));
-        swal("Unistall Succesfully!", "", "success");
-      }
-    });
-  };
   return (
     <div className="bg-base-200 min-h-[calc(100vh-262px)]">
       <Container>
@@ -126,7 +104,7 @@ const Installation = () => {
                 </div>
 
                 <button
-                  onClick={() => handleUninstall(app.id)}
+                  onClick={() => handleUninstall(app.id, setInstalledApps)}
                   className="btn bg-[#00D390] text-white rounded-md"
                 >
                   Uninstall
