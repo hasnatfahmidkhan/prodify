@@ -18,11 +18,32 @@ const Installation = () => {
     setInstalledApps(filtered);
   }, [apps]);
 
-  if (sortApp == "size-asc") {
-    installedApps.sort((a, b) => a.size - b.size);
+  const convertDownloadsToNumber = (value) => {
+    if (value.includes("K")) {
+      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000;
+    }
+    if (value.includes("M")) {
+      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000000;
+    }
+    if (value.includes("B")) {
+      return Number(value.replace(/[a-zA-Z]/g, "")) * 1000000000;
+    }
+  };
+
+  if (sortApp == "downloads-asc") {
+    installedApps.sort(
+      (a, b) =>
+        convertDownloadsToNumber(a.downloads) -
+        convertDownloadsToNumber(b.downloads)
+    );
   }
-  if (sortApp == "size-dsc") {
-    installedApps.sort((a, b) => b.size - a.size);
+
+  if (sortApp == "downloads-dsc") {
+    installedApps.sort(
+      (a, b) =>
+        convertDownloadsToNumber(b.downloads) -
+        convertDownloadsToNumber(a.downloads)
+    );
   }
 
   const handleUninstall = (id) => {
@@ -61,10 +82,10 @@ const Installation = () => {
               className="select bg-white w-fit"
             >
               <option value="none" disabled>
-                Sort by size
+                Sort by downloads
               </option>
-              <option value="size-asc">Low - High</option>
-              <option value="size-dsc">High - Low</option>
+              <option value="downloads-asc">Low - High</option>
+              <option value="downloads-dsc">High - Low</option>
             </select>
           </div>
         </div>
@@ -88,7 +109,9 @@ const Installation = () => {
                 />
 
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium text-center md:text-left">{app.title}</h3>
+                  <h3 className="text-lg font-medium text-center md:text-left">
+                    {app.title}
+                  </h3>
                   <div className="mt-1 flex items-center gap-5">
                     <span className="flex items-center gap-1 text-[#00D390]">
                       <img className="w-4" src={downloadIcon} alt="download" />
