@@ -6,7 +6,7 @@ It's a modern, responsive, and interactive web application built with React and 
 
 ## Live URL
 
-**Live Site:** https://game-space-app.netlify.app/
+**Live Site:** https://prodify-app.netlify.app/
 
 ---
 
